@@ -85,6 +85,7 @@ fun ActivitasPertama(modifier: Modifier){
         }
 
         Spacer(modifier = Modifier.height(height = 25.dp))
+
         Card(
             modifier = Modifier
                 .height(160.dp)
@@ -131,7 +132,6 @@ fun ActivitasPertama(modifier: Modifier){
                 }
             }
         }
-
         Spacer(modifier = Modifier.height(height = 25.dp))
         Card(
             modifier = Modifier
@@ -141,11 +141,11 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.Red
             )
-        ){
+        ) {
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(10.dp)
-            ){
+            ) {
                 val gambar = painterResource(id = R.drawable.umy1)
                 Image(
                     painter = gambar,
@@ -154,17 +154,33 @@ fun ActivitasPertama(modifier: Modifier){
                         .size(size = 100.dp)
                         .padding(all = 5.dp)
                 )
+
                 Spacer(modifier = Modifier.width(width = 30.dp))
+                Column() {
+                    Text(
+                        text = stringResource(id = R.string.nama),
+                        fontSize = 25.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
+                    Text(
+                        stringResource(R.string.nim),
+                        fontSize = 20.sp,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                    Text(
+                        stringResource(R.string.alamat),
+                        fontSize = 20.sp,
+                        color = Color.Yellow,
+                        modifier = Modifier.padding(top = 10.dp)
+                    )
+                }
+            }
+        }
 
-
-
-
-
-
-
-
-
-                Box(
+        Box(
             modifier = Modifier
                 .fillMaxSize()
         ) {
