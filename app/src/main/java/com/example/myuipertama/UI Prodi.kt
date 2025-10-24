@@ -93,9 +93,15 @@ fun ActivitasPertama(modifier: Modifier){
             colors = CardDefaults.cardColors(
                 containerColor = Color.Blue
             )
-        )
+        ){
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                modifier = Modifier.padding(10.dp)
+            ){
+                val gambar = painterResource(id = R.drawable.umy1)
 
-        Box(
+
+                Box(
             modifier = Modifier
                 .fillMaxSize()
         ) {
