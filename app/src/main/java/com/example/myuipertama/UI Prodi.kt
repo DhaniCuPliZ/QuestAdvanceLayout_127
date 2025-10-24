@@ -145,7 +145,15 @@ fun ActivitasPertama(modifier: Modifier){
             Row(
                 verticalAlignment = Alignment.CenterVertically,
                 modifier = Modifier.padding(10.dp)
-            )
+            ){
+                val gambar = painterResource(id = R.drawable.umy1)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
+                    modifier = Modifier
+                        .size(size = 100.dp)
+                        .padding(all = 5.dp)
+                )
 
 
 
@@ -153,7 +161,8 @@ fun ActivitasPertama(modifier: Modifier){
 
 
 
-        Box(
+
+                Box(
             modifier = Modifier
                 .fillMaxSize()
         ) {
