@@ -111,11 +111,17 @@ fun ActivitasPertama(modifier: Modifier){
                 Column() {
                     Text(
                         text = stringResource(id = R.string.nama),
+                        fontSize = 25.sp,
+                        fontFamily = FontFamily.Cursive,
+                        color = Color.White,
+                        modifier = Modifier.padding(top = 15.dp)
+                    )
 
 
 
 
-                        Box(
+
+                    Box(
             modifier = Modifier
                 .fillMaxSize()
         ) {
