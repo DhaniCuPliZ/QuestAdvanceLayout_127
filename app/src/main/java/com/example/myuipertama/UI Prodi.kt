@@ -99,9 +99,12 @@ fun ActivitasPertama(modifier: Modifier){
                 modifier = Modifier.padding(10.dp)
             ){
                 val gambar = painterResource(id = R.drawable.umy1)
+                Image(
+                    painter = gambar,
+                    contentDescription = null,
 
 
-                Box(
+                    Box(
             modifier = Modifier
                 .fillMaxSize()
         ) {
